@@ -1,0 +1,22 @@
+complementos {
+  id ( "com.android.application" )
+
+  //Agrega el complemento Gradle de servicios de Google
+  id ( "com.google.gms.google-services" )
+
+  ...
+}
+
+dependencias {
+  // Importar la lista de materiales de Firebase
+  implementación ( plataforma ( "com.google.firebase:firebase-bom:33.6.0" ))
+
+
+  // TODO: Agrega las dependencias para los productos de Firebase que deseas usar
+  // Al usar BoM, no especifique versiones en las dependencias de Firebase
+  implementación ( "com.google.firebase:firebase-analytics" )
+
+
+  // Agregue las dependencias para cualquier otro producto de Firebase deseado
+  // https://firebase.google.com/docs/android/setup#available-libraries
+}

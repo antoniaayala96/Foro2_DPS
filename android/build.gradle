@@ -1,0 +1,7 @@
+complementos {
+  // ...
+
+  // Agregue la dependencia para el complemento Gradle de servicios de Google
+  id ( "com.google.gms.google-services" ) versión "4.4.2" aplicar falso
+
+}
